@@ -30,7 +30,11 @@ function render(post) {
     cloneList.querySelector('.js-article-title').textContent = post.title
     cloneList.querySelector('.js-article-body').textContent = post.body
     cloneList.querySelector('.js-article-avatar').src = post.user.img
-    cloneList.querySelector('.js-article-username').textContent = post.user.name + " " + post.user.surname
+    if(post.user?.name && post.user?.surname){
+      cloneList.querySelector('.js-article-username').textContent = post?.user?.name + ' ' + post?.user?.surname
+    }else{
+        cloneList.querySelector('.js-article-username').textContent = post?.user?.name
+    }
     cloneList.querySelector('.js-article-views').textContent = post.views || 0
     
     fragment.appendChild(cloneList)

@@ -30,23 +30,25 @@ elPostForm.addEventListener("submit", (e) => {
             body: JSON.stringify({
                 title: titleValue,
                 body: bodyValue,
-                userId: user.user.id,
+                userId: user,
                 viuw: 0,
                 image:'https://picsum.photos/360/300/?random',
                 id: Date.now(),
                 created_at: new Date().toLocaleDateString(),
                 user:{
-                    name: user.user.name,
+                    name: user,
                 }
             })
         })
         .then((res) => {
             if(res.ok){
-                navigate("/src/modules/home/index.html")
                 return res.json()
             }
+        }).then((data) => {
+            if(data) {
+                navigate("/src/modules/home/index.html")
+            }
         })
-       
         .catch((err) => {
             console.log(err)
         })
