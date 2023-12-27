@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <section class="register">
+    <form class="register__form" action="#" method="post">
+      <h2 class="register__form-title">Ro‘yhatdan o‘tish</h2>
+      <div class="register__input-wrapper">
+        <label class="register__label" for="register-name">Ism</label>
+        <input class="register__input js-register-name" type="text" id="register-name" name="name" placeholder="Ism kiriting" minlength="2" required>
+      </div>
+      <div class="register__input-wrapper">
+        <label class="register__label" for="register-username">Username</label>
+        <input class="register__input js-register-username" type="text" id="register-username" name="username" placeholder="Username kiriting" minlength="2" required>
+      </div>
+      <div class="register__input-wrapper">
+        <label class="register__label" for="register-email">Email</label>
+        <input class="register__input js-register-email" type="email" id="register-email" name="email" placeholder="Email kiriting" required>
+      </div>
+      <div class="register__input-wrapper">
+        <label class="register__label" for="register-password">Parol</label>
+        <input class="register__input js-register-password" type="password" id="register-password" name="password" placeholder="Parolingizni kiriting" required>
+        <p style="color: rgb(177, 0, 0);" class="error" id="error"></p>
+      </div>
+      <button class="register__btn btn">Ro‘yhatdan o‘tish</button>
+      <p class="register__text">Sizda allaqachon hisob mavjudmi?</p>
+      <button class="register__login-btn">Kirish</button>
+    </form>
+  </section>
+  
+  <script src="./register.js"></script>
+</body>
+</html>

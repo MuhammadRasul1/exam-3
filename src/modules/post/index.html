@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container header__wrapper">
+      <a class="header__logo" href="/src/modules/home/index.html">
+        <img src="/src/img/logo.svg" alt="bossblog" width="139" height="37">
+      </a>
+      <div class="header__right">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="/src/modules/post/index.html">Yozish</a>
+          </li>
+          <li class="header__item">
+            <button class="header__user-btn" type="button"></a>
+          </li>
+          <li class="header__item">
+            <button class="header__arrow" type="button">
+              <img src="/src/img/arrow.svg" alt="arrow up" width="16" height="16">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="post">
+      <div class="container">
+        <form class="post__form">
+          <div class="post__input-wrapper">
+            <input class="post__input js-post-title" type="text" name="post-title" id="post-title" aria-label="post-title" placeholder="Title" required>
+          </div>
+          <div class="post__input-wrapper">
+            <input class="post__input js-post-body" type="text" name="post-body" id="post-body" aria-label="post-body" placeholder="Body" minlength="10" required>
+          </div>
+          <button class="post__btn btn">Chop etish</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__logo" href="/src/modules/home/index.html">
+              <img src="/src/img/footer-logo.svg" alt="footer-logo" width="139" height="37">
+            </a>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Loyiha haqida</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Yordam</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Foydalanish shartlari</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Maxfiylik siyosati</a>
+              </li>
+            </ul>
+            <p class="footer__desc">Ushbu loyihaning maqsadi oʻzbek tilida ilmiy maqolalar onlayn chop etish orqali milliy kontentni boyitish va hamjamiyatni kengaytirish</p>
+            <span class="footer__text">© Copyright 2023 Boss Blog inc.</span>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__media-list">
+              <li class="footer__media-item">
+                <a class="footer__media-img" href="#">
+                  <img src="/src/img/facebook.svg" alt="facebook" width="24" height="24">
+                </a>
+              </li>
+              <li class="footer__media-item">
+                <a class="footer__media-img" href="#">
+                  <img src="/src/img/twitter.svg" alt="twitter" width="24" height="24">
+                </a>
+              </li>
+              <li class="footer__media-item">
+                <a class="footer__media-img" href="#">
+                  <img src="/src/img/youtube.svg" alt="youtube" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+            <div class="footer__application-wrapper">
+              <a class="footer__application" href="#">
+                <img src="/src/img/appstore.svg" alt="download on the App Store" width="156" height="45">
+              </a>
+              <a class="footer__application" href="#">
+                <img src="/src/img/googleplay.svg" alt="Get it on Google Play" width="156" height="45">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  
+  <script src="./post.js"></script>
+</body>
+</html>

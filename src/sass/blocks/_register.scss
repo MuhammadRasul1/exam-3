@@ -1,0 +1,80 @@
+// register
+.register {
+    margin: 100px auto 160px auto;
+}
+
+.register__form {
+    padding: 32px 24px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+}
+
+.register__form-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500; 
+}
+
+.register__input-wrapper {
+    width: 407px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.register__label {
+    margin-bottom: 8px;
+    color: #585757;
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+.register__input {
+    padding: 8px 32px 8px 12px;
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+.register__input::placeholder {
+    color: #969696;
+}
+
+.register__btn {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.register__btn::before {
+    position: absolute;
+    top: 59px;
+    left: 0;
+    max-width: 380px;
+    width: 100%;
+    height: 1px;
+    background-color: #E8E8E8;
+    content: "";
+}
+
+.register__text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #585757;
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+.register__login-btn {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #0085FF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+}
