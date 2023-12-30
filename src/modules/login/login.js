@@ -31,7 +31,7 @@ function onFormSubmit(e) {
       fetch(BASE_URL + '/login', {
         method: 'POST',
         body: JSON.stringify({
-          name: userNameValue,
+          username: userNameValue,
           password: passwordValue
         }),
         headers: {
